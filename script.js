@@ -40,9 +40,6 @@ cards.forEach(card => {
 });
 
 
-
-
-// cards dogtag
 let dogtag1 = document.getElementById("dogtag1");
 let dogtag2 = document.getElementById("dogtag2");
 let dogtag3 = document.getElementById("dogtag3");
@@ -51,7 +48,6 @@ let dogtag5 = document.getElementById("dogtag5");
 let dogtag6 = document.getElementById("dogtag6");
 let dogtag7 = document.getElementById("dogtag7");
 
-// legendas cards dogtag
 let legendaDogtag1 = document.querySelector(".legenda-container-7-card-1");
 let legendaDogtag2 = document.querySelector(".legenda-container-7-card-2");
 let legendaDogtag3 = document.querySelector(".legenda-container-7-card-3");
@@ -60,8 +56,6 @@ let legendaDogtag5 = document.querySelector(".legenda-container-7-card-5");
 let legendaDogtag6 = document.querySelector(".legenda-container-7-card-6");
 let legendaDogtag7 = document.querySelector(".legenda-container-7-card-7");
 
-
-// img cards dogtag
 let imgCard1 = document.querySelector(".img-container-7-card-1");
 let imgCard2 = document.querySelector(".img-container-7-card-2");
 let imgCard3 = document.querySelector(".img-container-7-card-3");
@@ -69,9 +63,6 @@ let imgCard4 = document.querySelector(".img-container-7-card-4");
 let imgCard5 = document.querySelector(".img-container-7-card-5");
 let imgCard6 = document.querySelector(".img-container-7-card-6");
 let imgCard7 = document.querySelector(".img-container-7-card-7");
-
-
-let teste = document.querySelector("container-7-card-1");
 
 dogtag1.addEventListener("click", tag1);
 dogtag2.addEventListener("click", tag2);
@@ -82,136 +73,68 @@ dogtag6.addEventListener("click", tag6);
 dogtag7.addEventListener("click", tag7);
 
 
+function rotateOnCondition(legenda, img) {
+    const shouldRotate = legenda.style.display === 'flex' && img.style.display === 'none';
+
+    if (shouldRotate) {
+        dogtag1.classList.add('rotate-on-condition');
+    } else {
+        dogtag1.classList.remove('rotate-on-condition');
+    }
+}
+
+
+
+
+function toggleTag(tag, imgCard, legendaDogtag) {
+    const isTagOpen = tag.classList.contains('transition-tag-show');
+
+    resetTags();
+
+    if (!isTagOpen) {
+        tag.classList.add('transition-tag-show');
+        imgCard.classList.add('img-show');
+        legendaDogtag.classList.add('transition-legenda-show');
+        rotateOnCondition(legendaDogtag, tag);
+        legendaDogtag.classList.add('invert-text');
+        tag.querySelector('.titulo-container-7-card').classList.add('invert-text');
+    }
+}
+
+function resetTags() {
+    const allTags = [dogtag1, dogtag2, dogtag3, dogtag4, dogtag5, dogtag6, dogtag7];
+    
+    allTags.forEach((tag) => {
+        tag.classList.remove('transition-tag-show', 'transition-tag-hide');
+        tag.querySelector('.img-container-7-card').classList.remove('img-show', 'img-hide');
+        tag.querySelector('.legenda-container-7-card').classList.remove('transition-legenda-show', 'invert-text');
+        tag.querySelector('.titulo-container-7-card').classList.remove('invert-text');
+    });
+}
+
 function tag1() {
-    legendaDogtag1.style.display = (legendaDogtag1.style.display === 'flex') ? 'none' : 'flex';
-    imgCard1.style.display = (imgCard1.style.display === 'none') ? 'flex' : 'none';
-
-    legendaDogtag2.style.display = 'none';
-    legendaDogtag3.style.display = 'none';
-    legendaDogtag4.style.display = 'none';
-    legendaDogtag5.style.display = 'none';
-    legendaDogtag6.style.display = 'none';
-    legendaDogtag7.style.display = 'none';
-
-    imgCard2.style.display = 'flex';
-    imgCard3.style.display = 'flex';
-    imgCard4.style.display = 'flex';
-    imgCard5.style.display = 'flex';
-    imgCard6.style.display = 'flex';
-    imgCard7.style.display = 'flex';
-
+    toggleTag(dogtag1, imgCard1, legendaDogtag1);
 }
-
 function tag2() {
-    legendaDogtag2.style.display = (legendaDogtag2.style.display === 'flex') ? 'none' : 'flex';
-    imgCard2.style.display = (imgCard2.style.display === 'none') ? 'flex' : 'none';
-
-    legendaDogtag1.style.display = 'none';
-    legendaDogtag3.style.display = 'none';
-    legendaDogtag4.style.display = 'none';
-    legendaDogtag5.style.display = 'none';
-    legendaDogtag6.style.display = 'none';
-    legendaDogtag7.style.display = 'none';
-    
-    imgCard1.style.display = 'flex';
-    imgCard3.style.display = 'flex';
-    imgCard4.style.display = 'flex';
-    imgCard5.style.display = 'flex';
-    imgCard6.style.display = 'flex';
-    imgCard7.style.display = 'flex';
+    toggleTag(dogtag2, imgCard2, legendaDogtag2);
 }
-
 function tag3() {
-    legendaDogtag3.style.display = (legendaDogtag3.style.display === 'flex') ? 'none' : 'flex';
-    imgCard3.style.display = (imgCard3.style.display === 'none') ? 'flex' : 'none';
-
-    legendaDogtag1.style.display = 'none';
-    legendaDogtag2.style.display = 'none';
-    legendaDogtag4.style.display = 'none';
-    legendaDogtag5.style.display = 'none';
-    legendaDogtag6.style.display = 'none';
-    legendaDogtag7.style.display = 'none';
-    
-    imgCard1.style.display = 'flex';
-    imgCard2.style.display = 'flex';
-    imgCard4.style.display = 'flex';
-    imgCard5.style.display = 'flex';
-    imgCard6.style.display = 'flex';
-    imgCard7.style.display = 'flex';
+    toggleTag(dogtag3, imgCard3, legendaDogtag3);
 }
-
 function tag4() {
-    legendaDogtag4.style.display = (legendaDogtag4.style.display === 'flex') ? 'none' : 'flex';
-    imgCard4.style.display = (imgCard4.style.display === 'none') ? 'flex' : 'none';
-
-    legendaDogtag1.style.display = 'none';
-    legendaDogtag2.style.display = 'none';
-    legendaDogtag3.style.display = 'none';
-    legendaDogtag5.style.display = 'none';
-    legendaDogtag6.style.display = 'none';
-    legendaDogtag7.style.display = 'none';
-    
-    imgCard1.style.display = 'flex';
-    imgCard2.style.display = 'flex';
-    imgCard3.style.display = 'flex';
-    imgCard5.style.display = 'flex';
-    imgCard6.style.display = 'flex';
-    imgCard7.style.display = 'flex';
+    toggleTag(dogtag4, imgCard4, legendaDogtag4);
 }
-
 function tag5() {
-    legendaDogtag5.style.display = (legendaDogtag5.style.display === 'flex') ? 'none' : 'flex';
-    imgCard5.style.display = (imgCard5.style.display === 'none') ? 'flex' : 'none';
-
-    legendaDogtag1.style.display = 'none';
-    legendaDogtag2.style.display = 'none';
-    legendaDogtag3.style.display = 'none';
-    legendaDogtag4.style.display = 'none';
-    legendaDogtag6.style.display = 'none';
-    legendaDogtag7.style.display = 'none';
-    
-    imgCard1.style.display = 'flex';
-    imgCard2.style.display = 'flex';
-    imgCard3.style.display = 'flex';
-    imgCard4.style.display = 'flex';
-    imgCard6.style.display = 'flex';
-    imgCard7.style.display = 'flex';
+    toggleTag(dogtag5, imgCard5, legendaDogtag5);
 }
-
 function tag6() {
-    legendaDogtag6.style.display = (legendaDogtag6.style.display === 'flex') ? 'none' : 'flex';
-    imgCard6.style.display = (imgCard6.style.display === 'none') ? 'flex' : 'none';
-
-    legendaDogtag1.style.display = 'none';
-    legendaDogtag2.style.display = 'none';
-    legendaDogtag3.style.display = 'none';
-    legendaDogtag4.style.display = 'none';
-    legendaDogtag5.style.display = 'none';
-    legendaDogtag7.style.display = 'none';
-    
-    imgCard1.style.display = 'flex';
-    imgCard2.style.display = 'flex';
-    imgCard3.style.display = 'flex';
-    imgCard4.style.display = 'flex';
-    imgCard5.style.display = 'flex';
-    imgCard7.style.display = 'flex';
+    toggleTag(dogtag6, imgCard6, legendaDogtag6);
 }
-
 function tag7() {
-    legendaDogtag7.style.display = (legendaDogtag7.style.display === 'flex') ? 'none' : 'flex';
-    imgCard7.style.display = (imgCard7.style.display === 'none') ? 'flex' : 'none';
-
-    legendaDogtag1.style.display = 'none';
-    legendaDogtag2.style.display = 'none';
-    legendaDogtag3.style.display = 'none';
-    legendaDogtag4.style.display = 'none';
-    legendaDogtag5.style.display = 'none';
-    legendaDogtag6.style.display = 'none';
-    
-    imgCard1.style.display = 'flex';
-    imgCard2.style.display = 'flex';
-    imgCard3.style.display = 'flex';
-    imgCard4.style.display = 'flex';
-    imgCard5.style.display = 'flex';
-    imgCard6.style.display = 'flex';
+    toggleTag(dogtag7, imgCard7, legendaDogtag7);
 }
+
+
+
+
+

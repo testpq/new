@@ -25,6 +25,7 @@ nav span{
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: #0f0f0f;
 }
 
     .container-cabecalho{
@@ -37,7 +38,7 @@ nav span{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        color: #353535;
+        color: var(--font-color-secondary);
     }
 
     .sub-container-info-cabecalho{
@@ -47,8 +48,9 @@ nav span{
 
         .info-cabecalho--titulo{
             font-weight: 600;
-            color: #353535;
+            color: var(--terciaria);
             text-align: center;
+            color: var(--font-color-secondary);
         }
         .info-cabecalho--sub-titulo{
             font-weight: 300;

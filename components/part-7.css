@@ -11,7 +11,6 @@
         max-width: 1200px;
         width: 100%;
         height: 100%;
-        /* background-color: aqua; */
     }
 
     .cards-container-7{
@@ -22,6 +21,7 @@
         justify-content: center;
         width: 100%;    
         height: 90%;
+        cursor: pointer;
     }
 
         .container-7-titulo span{
@@ -42,6 +42,7 @@
             margin: 10px;
             transition: all .4s;
             color: #828282;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 8%);
         }   
 
         /* .container-7-card:hover{
@@ -75,6 +76,118 @@
         .img-container-7-card img{
             width: 70%;
         }
+
+/* // */
+.container-7-titulo span{
+    width: 100%;
+    height: 10;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;        
+    font-size: var(--font-titulo-size);
+    font-weight: var(--font-titulo-weight);
+}
+
+.container-7-card{
+    width: 250px;
+    min-height: 25vh;
+    height: 30vh;
+    margin: 10px;
+    color: #828282;
+    border-radius: 1rem;
+    transition: all 1000ms;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 8%);
+}   
+
+    .titulo-container-7-card h6{
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: .8em;
+        font-weight: 600;
+    }
+
+    .legenda-container-7-card p{
+        text-align: center;
+        padding: 0.5em;
+        height: auto;
+        font-weight: 300;
+        font-size: .8em;
+    }
+  
+    .legenda-container-7-card-1,
+    .legenda-container-7-card-2,
+    .legenda-container-7-card-3,
+    .legenda-container-7-card-4,
+    .legenda-container-7-card-5,
+    .legenda-container-7-card-6,
+    .legenda-container-7-card-7{
+        display: none;
+        margin-top: 15px;
+        transition: transform .3s ease-in-out;
+    }
+ 
+    .img-container-7-card{
+        display: flex;
+        height: 20vh;
+        padding: 10px;
+        margin-top: 0px;
+    }
+
+    .img-container-7-card-1,
+    .img-container-7-card-2,
+    .img-container-7-card-3,
+    .img-container-7-card-4,
+    .img-container-7-card-5,
+    .img-container-7-card-6,
+    .img-container-7-card-7{
+        text-align: center;
+        /* background-color: tomato; */
+        transition: all .8s;
+    }
+
+    .img-container-7-card img{
+        width: 70%;
+    }
+
+    .cards-container-7-max{
+        display: none;
+    }
+
+
+#dogtag1 {
+    position: relative;
+}
+
+.rotate-on-condition {
+    transform: rotateY(180deg);
+}
+
+.transition-tag-show{
+    transform: rotateY(180deg);
+    transition: all .5s;
+}
+
+.transition-legenda-show{
+    display: flex;
+}
+
+.img-show{
+    display: none;
+}
+
+.invert-text {
+    transform: rotateY(180deg);
+}
+
+.invert-text .legenda-container-7-card-1 {
+    transform: rotateY(180deg);
+}
+/*  */
+
 
 @media (max-width:480px) {
 
@@ -115,6 +228,10 @@
         font-weight: 300;
         font-size: .8em;
     }
+
+    /* tetse */
+    /* Adicione essas classes para definir as animações */
+    /*  */
    
     .legenda-container-7-card-1,
     .legenda-container-7-card-2,
@@ -125,6 +242,7 @@
     .legenda-container-7-card-7{
         display: none;
         margin-top: 15px;
+        transition: transform .3s ease-in-out;
     }
  
     .img-container-7-card{
@@ -142,6 +260,9 @@
     .img-container-7-card-6,
     .img-container-7-card-7{
         text-align: center;
+        /* background-color: tomato; */
+        transition: all .8s;
+
     }
 
     .img-container-7-card img{
@@ -151,6 +272,36 @@
     .cards-container-7-max{
         display: none;
     }
+
+
+#dogtag1 {
+    position: relative;
+}
+
+.rotate-on-condition {
+    transform: rotateY(180deg);
+}
+
+.transition-tag-show{
+    transform: rotateY(180deg);
+    transition: all .5s;
+}
+
+.transition-legenda-show{
+    display: flex;
+}
+
+.img-show{
+    display: none;
+}
+
+.invert-text {
+    transform: rotateY(180deg);
+}
+
+.invert-text .legenda-container-7-card-1 {
+    transform: rotateY(180deg);
+}
 
 }
 
@@ -192,7 +343,11 @@
             font-weight: 300;
             font-size: .8em;
         }
-          
+    
+        /* tetse */
+        /* Adicione essas classes para definir as animações */
+        /*  */
+       
         .legenda-container-7-card-1,
         .legenda-container-7-card-2,
         .legenda-container-7-card-3,
@@ -202,6 +357,7 @@
         .legenda-container-7-card-7{
             display: none;
             margin-top: 15px;
+            transition: transform .3s ease-in-out;
         }
      
         .img-container-7-card{
@@ -219,6 +375,9 @@
         .img-container-7-card-6,
         .img-container-7-card-7{
             text-align: center;
+            /* background-color: tomato; */
+            transition: all .8s;
+    
         }
     
         .img-container-7-card img{
@@ -228,4 +387,130 @@
         .cards-container-7-max{
             display: none;
         }
+    
+    
+    #dogtag1 {
+        position: relative;
+    }
+    
+    .rotate-on-condition {
+        transform: rotateY(180deg);
+    }
+    
+    .transition-tag-show{
+        transform: rotateY(180deg);
+        transition: all .5s;
+    }
+    
+    .transition-legenda-show{
+        display: flex;
+    }
+    
+    .img-show{
+        display: none;
+    }
+    
+    .invert-text {
+        transform: rotateY(180deg);
+    }
+    
+    .invert-text .legenda-container-7-card-1 {
+        transform: rotateY(180deg);
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){
+.container-7-card{
+        width: 150px;
+        min-height: 25vh;
+        margin: 10px;
+        color: #828282;
+        border-radius: 1rem;
+        transition: all 1000ms;
+    }   
+    
+        .titulo-container-7-card h6{
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: .8em;
+            font-weight: 600;
+        }
+    
+        .legenda-container-7-card p{
+            text-align: center;
+            padding: 0.5em;
+            height: auto;
+            font-weight: 300;
+            font-size: .8em;
+        }
+    
+        /* tetse */
+        /* Adicione essas classes para definir as animações */
+        /*  */
+       
+        .legenda-container-7-card-1,
+        .legenda-container-7-card-2,
+        .legenda-container-7-card-3,
+        .legenda-container-7-card-4,
+        .legenda-container-7-card-5,
+        .legenda-container-7-card-6,
+        .legenda-container-7-card-7{
+            display: none;
+            margin-top: 15px;
+            transition: transform .3s ease-in-out;
+        }
+     
+        .img-container-7-card{
+            display: flex;
+            height: 15vh;
+            padding: 10px;
+            margin-top: 0px;
+        }
+    
+        .img-container-7-card-1,
+        .img-container-7-card-2,
+        .img-container-7-card-3,
+        .img-container-7-card-4,
+        .img-container-7-card-5,
+        .img-container-7-card-6,
+        .img-container-7-card-7{
+            text-align: center;
+            /* background-color: tomato; */
+            transition: all .8s;
+    
+        }
+    
+        .img-container-7-card img{
+            width: 70%;
+        }
+    
+        .cards-container-7-max{
+            display: none;
+        }
+}
+@media (min-width:992px) and (max-width:1199px){
+    .container-7-card{
+        width: 250px;
+        min-height: 25vh;
+        height: 30vh;
+    }   
+
+    .img-container-7-card{
+        height: 20vh;
+        padding: 10px;
+    }
+
+    .img-container-7-card img{
+        width: 70%;
+    }
+
+}
+@media (min-width:1200px) and (max-width:1919px){
+    
+}
+@media (min-width:1920px){
+    
 }
