@@ -1,3 +1,4 @@
+/* Quem é xI oNix xx? */
 .part-1{
     max-width: 1200px;
     display: flex;
@@ -48,4 +49,87 @@
         text-align: right;
 
     }
+
+@media (max-width:480px) {
+.container-part-1{
+    margin-top: 0px;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    #foto-onix{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+        #foto-onix img{
+            width: 80%;
+        }
     
+    #historia-onix{
+        align-items: center;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+    #historia-onix h2{
+        display: none;
+    }
+    #historia-onix span{
+        text-align: center;
+    }
+    #historia-onix p{
+        text-align: center;
+    }
+}
+
+@media (min-width:481px) and (max-width:767px){
+    .container-part-1{
+        margin-top: 0px;
+        min-height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+        #foto-onix{
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+            #foto-onix img{
+                width: 80%;
+            }
+        
+        #historia-onix{
+            align-items: center;
+            max-width: 100%;
+            margin-top: 10px;
+        }
+        #historia-onix h2{
+            display: none;
+        }
+        #historia-onix span{
+            text-align: center;
+        }
+        #historia-onix p{
+            text-align: center;
+        }
+}
+
+@media (min-width:768px) and (max-width:991px){
+
+}
+
+/* @media (min-width:481px) and (max-width:767px){
+
+}
+
+@media (min-width:768px) and (max-width:991px){
+
+} */

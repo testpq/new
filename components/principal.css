@@ -119,364 +119,10 @@ footer{
 
 /* ------------------------------------------------------- */
 /* Breakpoints  */
-@media (max-width:480px) {
-
-    h2{
-        /* color: gold; */
-        font-size: .8em;
-    }
-    h4{
-        font-size: .8em;
-    }
-    p{
-        color: var(--font-color-primary);
-        font-size: .8em;
-        font-size: .9em;
-    }
-
-
-    
-
-    .container-home span{
-        color: white;   
-        font-size: 3em;
-        font-weight: 200;
-    }
-
-/* part-1 */
-/*  Quem é xI oNix xx? */ 
-
-.container-part-1{
-    margin-top: 0px;
-    min-height: 450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-    #foto-onix{
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-        #foto-onix img{
-            width: 80%;
-        }
-    
-    #historia-onix{
-        align-items: center;
-        max-width: 100%;
-        margin-top: 10px;
-    }
-    #historia-onix h2{
+@media (max-width:480px) {   
+    .carousel-max{
         display: none;
     }
-    #historia-onix span{
-        text-align: center;
-    }
-    #historia-onix p{
-        text-align: center;
-    }
-/**********/
-
-/* part-2 */
-/* Um pouco mais sobre o onix - Destruição nos ceus */
-
-.part-2--texto p{
-    margin-top: 10px;
-    text-align: left;
-    max-width: 600px;
-    width: 100%;
-    color: white;
-}
-/* ****** */
-
-/* part-3 */
-/*  O que é o Battlefield 1 */
-
-.img-container-part-3{
-    height: 70%;
-    width: 30%;
-    display: flex;
-    align-items: initial;
-    justify-content: left;
-    /* background-color: tomato; */
-    border: 2px solid red;
-    display: none;
-}
-    .img-container-part-3 img{
-        width: 100%;
-        height: auto;
-    }
-
-.texto-container-part-3{
-    height: 70%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: initial;
-    text-align: initial;
-}
-
-    .texto-container-part-3 p{
-        width: 100%;
-        margin-top: 10px;
-        font-weight: 300;
-    }
-
-    #btn-container-part-3{
-        margin-top: 20px;
-        border: none;
-        background-color: #3F3F3F;
-        width: 100px;
-        height: 40px;
-        color: white;
-    }
-        #btn-container-part-3:hover{
-            background-color: rgb(75, 74, 73);
-        }
-        #btn-container-part-3 a{
-            color:white;
-            font-size: 1em;
-            text-decoration: none;
-        }
-
-/* part-4 */
-/*  Sobre os aviões caça */
-.part-4{
-    width: 1200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 40vh;
-}
-
-.card-part4{
-    margin: 10px 0px 10px 0px;
-    width: 100%;
-    min-height: 180px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.card-part4 span{
-    font-size: 1.1em;
-    font-weight: 700;
-    width: 100%;
-}
-
-.card-part4 p{
-    margin-top: 10px;
-}
-
-
-.cards-part-4-max{
-    display: none;
-}
-
-
-
-
-/*  */
-
-
-/* part-5*/
-/* FIGHTER PLANE MONTAGE */
-.part-5{
-    display: flex;
-    justify-content: right;
-    max-width: 1200px;
-    width: 100%;
-    max-height: 80vh;
-}
-
-.container-part-5{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    min-height: 0vh;
-}
-
-.part-5--titulo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-}
-
-    .part-5--titulo span{
-        font-size: 1.5em;
-        font-weight: 700;
-    }
-    .part-5--titulo p{
-        text-align: left;
-        font-weight: 300;
-        width: 100%;
-        height: 150px;
-    }
-
-.part-5--video{
-    max-width: 100%;
-    min-height: auto;
-    height: 60%;
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.part-5--video iframe{
-    width: 100%;
-    min-height: 85%;
-    height: auto;
-    border: 2px solid yellow;
-}
-/* ******* */
-/* part-6*/
-/* Tipos de aviões caça */
-.part-6-titulo{
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-    .part-6-titulo span{
-        width: 1200px;
-        display: flex;
-        align-items: center;
-        justify-content: right;
-        /* background-color: greenyellow; */
-        font-size: 1.5em;
-        font-weight: 700;
-    }
-    .carousel{
-        width: 100%;
-    }
-    .carousel-control-prev span, .carousel-control-next span{
-        width: 25px;
-        height: 25px;
-        border-radius: 30px;
-    }
-    .icon-carousel i{
-        font-size: 1em;
-        color: white;
-    }
-    .carousel-indicators .active {
-        opacity: 1;
-    }
-    .carousel-indicators{
-        opacity: .2;
-    }
-    .carousel-indicators [data-bs-target] {
-        box-sizing: content-box;
-        font-size: .8em;
-        flex: 0 1 auto;
-        width: 1em;
-        height: 1em;
-        border-radius: 100%;
-        padding: 0;
-        margin-right: 3px;
-        margin-left: 3px;
-        text-indent: -999px;
-        cursor: pointer;
-        background-color: #fff;
-        background-clip: padding-box;
-        border: 0;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
-    }
-
-/* ******* */
-
-
-/* **** */
-/* part-8*/
-/* Estatísticas do jogador */
-.titulo-container-8 span{
-    padding: 0px 0px 0px 10px;
-}
-
-
-/* ****** */
-
-    footer, footer a{
-        font-size: 10px;
-    }
-
-    footer{
-        padding: 10px 0px;
-    }
-
-    .container-footer{
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .container-footer div{
-        padding: 5px 0px;
-    }
-
-    .cards-part-4-min{
-        display: block;
-        /* background-color: tomato; */
-    }
-
-    .card-part4{
-        background-color: rgb(224, 224, 224);
-        border: none;
-        border: 1px solid rgb(153, 153, 153);
-        min-height: 50px;   
-
-    }
-
-    .card-part4 span{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        padding: 5px 0px;
-    }
-
-    .card-part4 i{
-        font-size: 1.3em;
-        font-weight: 600;
-    }
-
-    .card-min-1,
-    .card-min-2,
-    .card-min-3,
-    .card-min-4{
-        max-height: 15px;
-        overflow: hidden;
-        transition: max-height 0.6s ease-out;
-    }
-
-    .card-min-1.active .desc1,
-    .card-min-2.active .desc2,
-    .card-min-3.active .desc3,
-    .card-min-4.active .desc4{
-        display: block;
-    }
-   
-    .card-min-1.active,
-    .card-min-2.active,
-    .card-min-3.active,
-    .card-min-4.active{
-        max-height: 250px;
-        display: block;
-
-    }
-
 }
 
 @media (min-width:481px) and (max-width:767px){
@@ -489,10 +135,10 @@ footer{
         display: none;
     }
 
-    .cards-container-7-min{
-        display: block;
-    }
     .cards-container-7-max{
+        display: none;
+    }
+    .carousel-max{
         display: none;
     }
 }
@@ -504,6 +150,10 @@ footer{
     .cards-container-7-min{
         display: none;
     }
+    .carousel-min{
+        display: none;
+    }
+
 }
 
 @media (min-width:992px) and (max-width:1199px){
@@ -511,6 +161,9 @@ footer{
         display: none;
     }
     .cards-container-7-min{
+        display: none;
+    }
+    .carousel-min{
         display: none;
     }
 }
@@ -522,6 +175,9 @@ footer{
     .cards-container-7-min{
         display: none;
     }
+    .carousel-min{
+        display: none;
+    }
 }
 
 @media (min-width:1920px){
@@ -529,6 +185,10 @@ footer{
         display: none;
     }
     .cards-container-7-min{
+        display: none;
+    }
+    
+    .carousel-min{
         display: none;
     }
 }

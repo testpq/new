@@ -76,15 +76,8 @@
             width: 70%;
         }
 
-        .cards-container-7-min{
-            /* background-color: tomato; */
-        }
-
-
-
 @media (max-width:480px) {
 
-/* Medalhas e Dogs Tags */
 .container-7-titulo span{
     width: 100%;
     height: 10;
@@ -105,12 +98,6 @@
     transition: all 1000ms;
 }   
 
-/* .container-7-card:hover{
-    background-color: var(--primary);
-    color: #e7e7e7;
-    transition: all 1000ms;
-} */
-
     .titulo-container-7-card h6{
         min-height: 40px;
         display: flex;
@@ -128,16 +115,7 @@
         font-weight: 300;
         font-size: .8em;
     }
-
-    .legenda-container-7-card{
-        /* display: none; */
-    }
-
-
-
-
-
-    
+   
     .legenda-container-7-card-1,
     .legenda-container-7-card-2,
     .legenda-container-7-card-3,
@@ -154,7 +132,6 @@
         height: 15vh;
         padding: 10px;
         margin-top: 0px;
-        /* background-color: red; */
     }
 
     .img-container-7-card-1,
@@ -175,4 +152,80 @@
         display: none;
     }
 
+}
+
+@media (min-width:481px) and (max-width:767px){
+    .container-7-titulo span{
+        width: 100%;
+        height: 10;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+        font-size: var(--font-titulo-size);
+        font-weight: var(--font-titulo-weight);
+    }
+    
+    .container-7-card{
+        width: 150px;
+        min-height: 25vh;
+        margin: 10px;
+        color: #828282;
+        border-radius: 1rem;
+        transition: all 1000ms;
+    }   
+    
+        .titulo-container-7-card h6{
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: .8em;
+            font-weight: 600;
+        }
+    
+        .legenda-container-7-card p{
+            text-align: center;
+            padding: 0.5em;
+            height: auto;
+            font-weight: 300;
+            font-size: .8em;
+        }
+          
+        .legenda-container-7-card-1,
+        .legenda-container-7-card-2,
+        .legenda-container-7-card-3,
+        .legenda-container-7-card-4,
+        .legenda-container-7-card-5,
+        .legenda-container-7-card-6,
+        .legenda-container-7-card-7{
+            display: none;
+            margin-top: 15px;
+        }
+     
+        .img-container-7-card{
+            display: flex;
+            height: 15vh;
+            padding: 10px;
+            margin-top: 0px;
+        }
+    
+        .img-container-7-card-1,
+        .img-container-7-card-2,
+        .img-container-7-card-3,
+        .img-container-7-card-4,
+        .img-container-7-card-5,
+        .img-container-7-card-6,
+        .img-container-7-card-7{
+            text-align: center;
+        }
+    
+        .img-container-7-card img{
+            width: 70%;
+        }
+    
+        .cards-container-7-max{
+            display: none;
+        }
 }

@@ -21,11 +21,10 @@ nav span{
 /* -- */
 
 .cabecalho{
-    background-color: var(--terciaria) ;
+    background-color: var(--primaria);
     width: 100%;
     display: flex;
     justify-content: center;
-    
 }
 
     .container-cabecalho{
@@ -38,7 +37,7 @@ nav span{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        /* background-color: tomato; */
+        color: #353535;
     }
 
     .sub-container-info-cabecalho{
@@ -54,7 +53,6 @@ nav span{
         .info-cabecalho--sub-titulo{
             font-weight: 300;
             text-align: center;
-
         }
 
         .info-cabecalho--sub-titulo:hover{
