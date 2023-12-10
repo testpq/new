@@ -1,9 +1,7 @@
 .part-9{
-    /* margin-top: 50px; */
     width: 1200px;
     display: flex;
     justify-content: center;
-    /* background-color: aquamarine; */
 }
     .container-part-9{
         max-width: 1200px;
@@ -34,14 +32,11 @@
         margin-top: 10px;
     }
 
-
-
         .container-part-9-img{
             display: flex;
             align-items: center;
             justify-content: center;
             min-height: 25vh;
-            width: 100%;
             padding: 40px;
             margin-top: 25px;
         }
@@ -67,25 +62,21 @@
 
 .imagem1, .imagem3{
     margin: 3px;
-    max-width: 50%;
 }
 
 .imagem2{
-    /* background-color: tomato; */
     position: absolute;
     z-index: 1;
-    /* max-width: 45%; */
+    max-width: 45%;
     margin-bottom: 55px;
-    max-width: 1200px;
     height: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* display: none; */
 }
 
 .imagem2 img{
-    max-width: 50%;
+    width: 600px;
     transition: all .4s;
 }
 
@@ -94,9 +85,93 @@
     transition: all .4s;
 }
 
-
 .imagem1:hover, .imagem3:hover{
     transition: all .4s;
     z-index: 999;
     transform: scale(1.20);
+}
+
+
+/* Placares */
+@media (max-width:480px){
+
+.container-part-9-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 25vh;
+    width: 100%;
+    padding: 40px;
+    margin-top: 25px;
+}
+
+
+.container-img{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-img img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem1{
+    widows: 500px;
+}
+
+
+.imagem2{
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 55px;
+    max-width: 1200px;
+    height: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem2 img{
+    max-width: 60%;
+    transition: all .4s;
+}
+
+.imagem1, 
+.imagem2,
+.imagem3{
+    transition: all .4s;
+}
+
+.imagem1, 
+.imagem3{
+    transform: scale(1.4);
+}
+
+
+.imagem2:hover{
+    transition: all .4s;
+    transform: scale(1.5);
+}
+
+.imagem1:hover, .imagem3:hover{
+    transition: all .4s;
+    z-index: 999;
+}
+
+.imagem1:hover{
+    transform: translateX(50%) scale(2.0)
+}
+
+.imagem3:hover{
+    transform: translateX(-50%) scale(2.0)
+}
+
+
+
 }
