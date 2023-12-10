@@ -330,8 +330,10 @@ footer{
 }
 
 .part-5--video iframe{
-    width: 85%;
+    width: 100%;
+    min-height: 85%;
     height: auto;
+    border: 2px solid yellow;
 }
 /* ******* */
 /* part-6*/
