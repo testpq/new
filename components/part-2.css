@@ -1,0 +1,43 @@
+/* Um pouco mais sobre o onix - Destruição nos ceus */
+.part-2{
+    width: 100%;
+    background-image: url(../img/aviao\ caca2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: tomato;
+
+}
+
+.container-part-2{
+    color: #d2d2d2;
+    max-width: 1200px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.part-2--texto{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    .part-2--texto span{
+        font-size: 1.5em;
+        font-weight: 700;
+
+    }
+    .part-2--texto p{
+        margin-top: 10px;
+        text-align: left;
+        max-width: 600px;
+        width: 100%;
+    }

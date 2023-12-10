@@ -1,0 +1,59 @@
+.part-8{
+    width: 100%;
+    max-height: 70vh;
+    display: flex;
+    /* background-color: tomato; */
+}
+
+    .container-8-img{
+        background-image: url(../img/pilot\ class.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 35%;
+        max-height: 70vh;
+
+    }
+        .container-8-img img{
+            width: 100%;
+            height: auto;
+        }
+    .container-8-estatisticas{
+        margin-left: 1em;
+        background-color: #212121;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .titulo-container-8{
+        display: flex;
+        align-items: center;
+        height: 5em;
+    }
+
+        .titulo-container-8 span{
+            padding: 15px 0px 15px 30px;
+            font-size: var(--font-titulo-size);
+            color: var(--font-color-secondary);
+            font-weight: var(--font-titulo-weight);
+            
+        }
+
+    .container-8-estatisticas-img{
+        max-width: 100%;
+        max-width: 1200px;
+        width: 100%;
+        max-height: 100%;
+        height: calc(100% - 5em);
+        /* border: 3px solid fuchsia; */
+    }
+
+    .container-8-estatisticas-img img{
+        max-width: 100%;
+        width: 100%;
+        max-height: 100%;
+        /* display: none; */
+    }
+

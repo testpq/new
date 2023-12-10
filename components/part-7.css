@@ -1,0 +1,178 @@
+/* Medalhas e Dogs Tags */
+.part-7{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: tomato; */
+
+}
+    .container-part-7{
+        max-width: 1200px;
+        width: 100%;
+        height: 100%;
+        /* background-color: aqua; */
+    }
+
+    .cards-container-7{
+        margin-top: 5vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;    
+        height: 90%;
+    }
+
+        .container-7-titulo span{
+            width: 100%;
+            height: 10;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;        
+            font-size: var(--font-titulo-size);
+            font-weight: var(--font-titulo-weight);
+        }
+
+        .container-7-card{
+            background-color: #f7f7f7;
+            width: 250px;
+            height: auto;
+            margin: 10px;
+            transition: all .4s;
+            color: #828282;
+        }   
+
+        /* .container-7-card:hover{
+            background-color: var(--primary);
+            transition: all .4s;
+            color: #e7e7e7;
+            transform: scale(1.04);
+        } */
+
+            .titulo-container-7-card{
+                text-align: center;
+                padding: 0.5em;
+                height: 6vh;
+                font-weight: 600;
+            }
+        
+            .legenda-container-7-card{
+                text-align: center;
+                padding: 0.5em;
+                height: 10vh;
+                font-weight: 300;
+            }
+
+        .img-container-7-card{
+            display: flex;
+            height: 25vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img-container-7-card img{
+            width: 70%;
+        }
+
+        .cards-container-7-min{
+            /* background-color: tomato; */
+        }
+
+
+
+@media (max-width:480px) {
+
+/* Medalhas e Dogs Tags */
+.container-7-titulo span{
+    width: 100%;
+    height: 10;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;        
+    font-size: var(--font-titulo-size);
+    font-weight: var(--font-titulo-weight);
+}
+
+.container-7-card{
+    width: 150px;
+    min-height: 25vh;
+    margin: 10px;
+    color: #828282;
+    border-radius: 1rem;
+    transition: all 1000ms;
+}   
+
+/* .container-7-card:hover{
+    background-color: var(--primary);
+    color: #e7e7e7;
+    transition: all 1000ms;
+} */
+
+    .titulo-container-7-card h6{
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: .8em;
+        font-weight: 600;
+    }
+
+    .legenda-container-7-card p{
+        text-align: center;
+        padding: 0.5em;
+        height: auto;
+        font-weight: 300;
+        font-size: .8em;
+    }
+
+    .legenda-container-7-card{
+        /* display: none; */
+    }
+
+
+
+
+
+    
+    .legenda-container-7-card-1,
+    .legenda-container-7-card-2,
+    .legenda-container-7-card-3,
+    .legenda-container-7-card-4,
+    .legenda-container-7-card-5,
+    .legenda-container-7-card-6,
+    .legenda-container-7-card-7{
+        display: none;
+        margin-top: 15px;
+    }
+ 
+    .img-container-7-card{
+        display: flex;
+        height: 15vh;
+        padding: 10px;
+        margin-top: 0px;
+        /* background-color: red; */
+    }
+
+    .img-container-7-card-1,
+    .img-container-7-card-2,
+    .img-container-7-card-3,
+    .img-container-7-card-4,
+    .img-container-7-card-5,
+    .img-container-7-card-6,
+    .img-container-7-card-7{
+        text-align: center;
+    }
+
+    .img-container-7-card img{
+        width: 70%;
+    }
+
+    .cards-container-7-max{
+        display: none;
+    }
+
+}

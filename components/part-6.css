@@ -1,0 +1,62 @@
+/* Tipos de aviões caça */
+.part-6{
+    width: 100%;
+}
+.part-6-titulo{
+    width: 100%;
+    /* background-color: tomato; */
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .part-6-titulo span{
+        width: 1200px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        /* background-color: greenyellow; */
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    .carousel{
+
+    }
+    .carousel-control-prev span, .carousel-control-next span{
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 40%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon-carousel i{
+        font-size: 2em;
+        color: white;
+    }
+    .carousel-indicators .active {
+        opacity: 1;
+    }
+    .carousel-indicators{
+        opacity: .2;
+    }
+    .carousel-indicators [data-bs-target] {
+        box-sizing: content-box;
+        flex: 0 1 auto;
+        width: 1em;
+        height: 1em;
+        border-radius: 100%;
+        padding: 0;
+        margin-right: 3px;
+        margin-left: 3px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }

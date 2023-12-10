@@ -1,0 +1,68 @@
+/* part 3 - O QUE É O BATTLEFIELD 1? */
+.part-3{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: tomato; */
+}
+
+    .container-part-3{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: yellow; */
+    }
+
+        .img-container-part-3{
+            height: 70%;
+            width: 30%;
+            display: flex;
+            align-items: initial;
+            justify-content: left;
+            /* background-color: tomato; */
+        }
+            .img-container-part-3 img{
+                width: 100%;
+                height: auto;
+            }
+
+        .texto-container-part-3{
+            height: 70%;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            text-align: end;
+        }
+            .texto-container-part-3 span{
+                font-size: 1.5em;
+                font-weight: 700;
+            }
+            .texto-container-part-3 p{
+                width: 90%;
+                /* border: 1px solid black; */
+                margin-top: 10px;
+                font-weight: 300;
+            }
+
+            #btn-container-part-3{
+                margin-top: 20px;
+                border: none;
+                background-color: #3F3F3F;
+                width: 100px;
+                height: 40px;
+                color: white;
+            }
+                #btn-container-part-3:hover{
+                    background-color: rgb(75, 74, 73);
+                }
+                #btn-container-part-3 a{
+                    color:white;
+                    font-size: 1em;
+                    text-decoration: none;
+                }
+
+/* FIM PART 3  */

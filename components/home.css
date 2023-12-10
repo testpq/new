@@ -1,0 +1,29 @@
+.home{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/onix.jpg);
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(80vh - 50px);
+}
+
+.container-home{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 1200px;
+    height: 100%;
+    /* background-color: tomato; */
+}
+
+.container-home span{
+    color: white;   
+    font-size: 5em;
+    font-weight: 100;
+
+}
+/* -- */
+
+

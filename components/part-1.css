@@ -1,0 +1,51 @@
+.part-1{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: tomato; */
+}
+
+.container-part-1{
+    width: 100%;
+    margin-top: 15px;
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+    #foto-onix{
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+        #foto-onix img{
+            width: 100%;
+        }
+    
+    #historia-onix{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid rgb(255, 0, 0); */
+        max-width: 50%;
+    }
+    #historia-onix span{
+        /* border: 1px solid black; */
+        width: 100%;
+        text-align: right;
+        font-size: 1.5em;
+        font-weight: 700;
+        color: #353535;
+    }
+    #historia-onix p{
+        /* border: 1px solid black; */
+        margin-top: 10px;
+        text-align: right;
+
+    }
+    
