@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: tomato; */
 }
 
 .container-part-1{
@@ -32,11 +31,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* border: 2px solid rgb(255, 0, 0); */
         max-width: 50%;
     }
     #historia-onix span{
-        /* border: 1px solid black; */
         width: 100%;
         text-align: right;
         font-size: 1.5em;
@@ -125,11 +122,3 @@
 @media (min-width:768px) and (max-width:991px){
 
 }
-
-/* @media (min-width:481px) and (max-width:767px){
-
-}
-
-@media (min-width:768px) and (max-width:991px){
-
-} */

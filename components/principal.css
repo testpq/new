@@ -56,14 +56,12 @@ section{
 }
 
 
-/* texto */
 h2{
     /* color: red; */
     font-size: 1em;
     font-weight: 700;
 }
 h4{
-    /* color: yellowgreen; */
     font-size: 1em;
     font-weight: 600;
     margin: 0;
@@ -75,11 +73,8 @@ h6{
 }
 
 p{
-    /* color: red; */
     font-weight: 300;
 }
-
-/* --- */
 
 
 .part-1,
@@ -102,20 +97,14 @@ p{
 .container-part-4,
 .container-part-5,
 .part-6-titulo,
+.container-7-titulo,
 .container-part-9-titulo p,
 footer{
-    /* border: 3px solid red; */
     padding: 0px 20px;
 }
 .titulo-container-8{
     padding: 0px 15px 0px 0px;
 }
-
-
-
-
-
-
 
 /* ------------------------------------------------------- */
 /* Breakpoints  */
@@ -126,44 +115,34 @@ footer{
 }
 
 @media (min-width:481px) and (max-width:767px){
-
     .carousel-max{
         display: none;
     }
 }
 
 @media (min-width:768px) and (max-width:991px){
-    .cards-part-4-min{
-        display: none;
-    }
+    .cards-part-4-min,
     .carousel-min{
         display: none;
     }
-
 }
 
 @media (min-width:992px) and (max-width:1199px){
-    .cards-part-4-min{
-        display: none;
-    }
+    .cards-part-4-min,
     .carousel-min{
         display: none;
     }
 }
 
 @media (min-width:1200px) and (max-width:1919px){
-    .cards-part-4-min{
-        display: none;
-    }
+    .cards-part-4-min,
     .carousel-min{
         display: none;
     }
 }
 
 @media (min-width:1920px){
-    .cards-part-4-min{
-        display: none;
-    }
+    .cards-part-4-min,
     .carousel-min{
         display: none;
     }

@@ -84,8 +84,6 @@ function rotateOnCondition(legenda, img) {
 }
 
 
-
-
 function toggleTag(tag, imgCard, legendaDogtag) {
     const isTagOpen = tag.classList.contains('transition-tag-show');
 
@@ -133,8 +131,6 @@ function tag6() {
 function tag7() {
     toggleTag(dogtag7, imgCard7, legendaDogtag7);
 }
-
-
 
 
 

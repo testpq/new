@@ -4,7 +4,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: tomato; */
 }
 
     .container-part-3{
@@ -13,7 +12,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        /* background-color: yellow; */
     }
 
         .img-container-part-3{
@@ -22,7 +20,6 @@
             display: flex;
             align-items: initial;
             justify-content: left;
-            /* background-color: tomato; */
         }
             .img-container-part-3 img{
                 width: 100%;
@@ -43,7 +40,6 @@
             }
             .texto-container-part-3 p{
                 width: 90%;
-                /* border: 1px solid black; */
                 margin-top: 10px;
                 font-weight: 300;
             }
@@ -52,9 +48,11 @@
                 margin-top: 20px;
                 border: none;
                 background-color: #3F3F3F;
-                width: 100px;
+                width: 120px;
                 height: 40px;
                 color: white;
+                border-radius: 15px;
+                padding: 5px;
             }
                 #btn-container-part-3:hover{
                     background-color: rgb(75, 74, 73);
@@ -91,26 +89,8 @@
     
         .texto-container-part-3 p{
             width: 100%;
-            margin-top: 10px;
-            font-weight: 300;
         }
     
-        #btn-container-part-3{
-            margin-top: 20px;
-            border: none;
-            background-color: #3F3F3F;
-            width: 100px;
-            height: 40px;
-            color: white;
-        }
-            #btn-container-part-3:hover{
-                background-color: rgb(75, 74, 73);
-            }
-            #btn-container-part-3 a{
-                color:white;
-                font-size: 1em;
-                text-decoration: none;
-            }
 }
 
 @media (min-width:481px) and (max-width:767px){
@@ -139,26 +119,7 @@
     
         .texto-container-part-3 p{
             width: 100%;
-            margin-top: 10px;
-            font-weight: 300;
         }
-    
-        #btn-container-part-3{
-            margin-top: 20px;
-            border: none;
-            background-color: #3F3F3F;
-            width: 100px;
-            height: 40px;
-            color: white;
-        }
-            #btn-container-part-3:hover{
-                background-color: rgb(75, 74, 73);
-            }
-            #btn-container-part-3 a{
-                color:white;
-                font-size: 1em;
-                text-decoration: none;
-            }
 }
 
 @media (min-width:768px) and (max-width:991px){
